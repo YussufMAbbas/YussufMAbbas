@@ -1,0 +1,147 @@
+@import url(index.css);
+@import url(blog-post.css);
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+@font-face {
+    font-family: Cheque;
+    src: url("../fonts/Cheque-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: Cheque;
+    font-weight: bold;
+    src: url("../fonts/Cheque-Black.otf") format("opentype");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #ddd;
+    margin: 0;
+    font-family: "Tajawal", sans-serif;
+}
+h1 {
+    font-family: Cheque, serif;
+}
+main {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 140px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.75);
+    background-color: #fff;
+    border-bottom: 5px #000080 solid;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 80px;
+}
+#logo {
+    width: 80px;
+    float: left;
+    margin: 0 80px 0 0;
+    position: fixed;
+    top: 0;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar a {
+    text-align: center;
+    padding: 26px 25px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover:not(:last-of-type) {
+    background-color: #000080;
+    color: #f2f2f2;
+    transition: all 0.3s;
+}
+.navbar a:hover:last-of-type {
+    cursor: pointer;
+}
+.navbar #home {
+    margin-right: auto;
+    margin-left: 80px;
+}
+.navbar .pin {
+    background-color: #000080;
+    color: #f2f2f2;
+}
+.navbar #icon {
+    display: none;
+}
+.navbar a:active {
+    color: #000080;
+    transition: all 80ms;
+}
+.navbar #icon,
+.responsive-navbar {
+    display: none;
+}
+footer {
+    background-color: #000080;
+    color: #ccc;
+    text-align: center;
+    font-style: italic;
+}
+footer p {
+    margin: 0;
+    font-size: 20px;
+}
+@media (max-width: 900px) {
+    main {
+        max-width: 700px;
+    }
+}
+@media (max-width: 599px) {
+    main {
+        max-width: 100%;
+        margin: 0;
+        margin-top: 140px;
+    }
+    .navbar a:not(:first-of-type) {
+        display: none;
+    }
+    .navbar #icon {
+        display: block;
+    }
+    .responsive-navbar.show {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 80px;
+        margin-left: 80px;
+    }
+    .responsive-navbar a {
+        display: block;
+        text-align: center;
+        padding: 26px 25px;
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .responsive-navbar .pin {
+        background-color: #000080;
+        color: #f2f2f2;
+    }
+    .responsive-navbar a:hover {
+        background-color: #000080;
+        color: #f2f2f2;
+        transition: all 0.3s;
+    }
+    .responsive-navbar a:active {
+        color: #000080;
+        transition: all 80ms;
+    }
+}
