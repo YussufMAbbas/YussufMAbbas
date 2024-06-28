@@ -1,0 +1,71 @@
+
+.Add {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+
+.Add:hover {
+    background-color: black; 
+    border-color: black;
+  }
+  .input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    outline: none; /* Removes the default blue outline on focus */
+    transition: border-color 0.3s;
+  }
+
+  .input:focus {
+    border-color: #4CAF50; /* Changes border color on focus */
+  }
+.title{
+    text-align: center;
+    font-family: sans-serif;
+}
+.container{
+    text-align: center;
+}
+.task-block {
+    
+}
+.task-block > span {
+    display: inline-block;
+    border-radius: 5px;
+    border: solid black 2px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+.task-block > button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff1d1d;
+    border: 2px solid #ff1d1d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.task-block > button:hover {
+    background-color: #860e0e;
+    border-color: #860e0e;
+}
